@@ -1,0 +1,40 @@
+/* Ensure html, body, and root element take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a smooth font and background */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa; /* Bootstrap light gray background */
+}
+
+/* Reset anchor styles */
+
+
+/* Optional: nice buttons */
+button {
+  cursor: pointer;
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Form input reset */
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Utility class (optional): vertically and horizontally center content */
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
