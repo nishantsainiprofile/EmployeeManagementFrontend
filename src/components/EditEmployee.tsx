@@ -111,7 +111,7 @@ const EditEmployee: React.FC = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const res = await axios.get(`http://localhost:5001/api/employees/${id}`);
+        const res = await axios.get(`https://employee-management-backend-inky.vercel.app/api/employees/${id}`);
         const data = res.data;
         setForm({
           name: data.name,
@@ -136,7 +136,7 @@ const EditEmployee: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5001/api/employees/${id}`, {
+      await axios.put(`https://employee-management-backend-inky.vercel.app/api/employees/${id}`, {
         ...form,
         salary: Number(form.salary),
       });

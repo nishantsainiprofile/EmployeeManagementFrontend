@@ -205,7 +205,7 @@ const EmployeeList: React.FC = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/employeeList');
+        const response = await axios.get('https://employee-management-backend-inky.vercel.app/api/employeeList');
         console.log(response);
         setEmployees(response.data); // Make sure your backend sends an array of employees
         setError(null);
@@ -223,7 +223,7 @@ const EmployeeList: React.FC = () => {
     if (!window.confirm('Are you sure you want to delete this employee?')) return;
 
     try {
-      await axios.delete(`http://localhost:5001/api/employees/${_id}`);
+      await axios.delete(`https://employee-management-backend-inky.vercel.app/api/employees/${_id}`);
 setEmployees(prev => prev.filter(emp => emp._id !== _id))
     } catch (err) {
       alert('Failed to delete employee.');

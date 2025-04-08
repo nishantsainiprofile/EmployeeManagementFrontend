@@ -12,7 +12,7 @@ const LoginPage: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5001/api/EmployeeLogin', {
+      const response = await axios.post('https://employee-management-backend-inky.vercel.app/api/EmployeeLogin', {
         email,
         password,
       });

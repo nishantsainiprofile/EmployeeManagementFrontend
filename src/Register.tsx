@@ -54,7 +54,7 @@ const RegisterPage: React.FC = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/api/EmployeeRegister', {
+      const response = await axios.post('https://employee-management-backend-inky.vercel.app/api/EmployeeRegister', {
         name: form.name,
         email: form.email,
         password: form.password,

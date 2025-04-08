@@ -13,7 +13,7 @@ const AddEmployee: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5001/api/addemployees', {
+      await axios.post('https://employee-management-backend-inky.vercel.app/api/addemployees', {
         name,
         email,
         position,
