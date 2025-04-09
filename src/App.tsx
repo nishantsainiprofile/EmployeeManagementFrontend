@@ -84,6 +84,7 @@ import EditEmployee from './components/EditEmployee';
 import Login from './Login';
 import Register from './Register';
 import { MyContextProvider } from './MyContext'; // adjust path if needed
+import SearchEmployee from './components/SearchEmployee';
 
 const App: React.FC = () => {
   return (
@@ -98,6 +99,7 @@ const App: React.FC = () => {
             <Route path="/edit-employee/:id" element={<EditEmployee />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/SearchEmployee" element={<SearchEmployee />} />
           </Routes>
         </div>
       </Router>

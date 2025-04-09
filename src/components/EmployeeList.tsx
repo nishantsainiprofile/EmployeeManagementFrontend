@@ -251,6 +251,7 @@ setEmployees(prev => prev.filter(emp => emp._id !== _id))
               <th>Name</th>
               <th>Email</th>
               <th>Position</th>
+              <th>Department</th>
               <th style={{ width: '180px' }}>Actions</th>
             </tr>
           </thead>
@@ -260,6 +261,7 @@ setEmployees(prev => prev.filter(emp => emp._id !== _id))
                 <td>{emp.name}</td>
                 <td>{emp.email}</td>
                 <td>{emp.position}</td>
+                <td>{emp.department}</td>
                 <td>
                   <Link to={`/edit-employee/${emp._id}`} className="btn btn-sm btn-info me-2">
                     Edit

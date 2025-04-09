@@ -6,7 +6,7 @@ import AddEmployee from './components/AddEmployee';
 import EditEmployee from './components/EditEmployee';
 import Login from "./Login"
 import Register from "./Register"
-
+import SearchEmployee from "./components/SearchEmployee";
 const App: React.FC = () => {
   return (
     <Router>
@@ -19,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/edit-employee/:id" element={<EditEmployee />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/search-employee" element={<SearchEmployee />} />
         </Routes>
       </div>
     </Router>
